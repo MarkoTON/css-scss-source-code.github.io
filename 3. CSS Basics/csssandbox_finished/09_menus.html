@@ -20,12 +20,15 @@
       overflow: auto;
     }
 
+    /* If not added block or inline-block to a tag, then add pedding to li. Also issue will appere with :hover effect. */
     .navbar li {
       float: left;
+      /* padding: 15px 20px; */
     }
 
+    /*Need to be block or inline-block so padding will work. If not added then padding will not react.*/
     .navbar li a {
-      display: block;
+      display: inline-block;
       color: #fff;
       text-decoration: none;
       padding: 15px 20px;

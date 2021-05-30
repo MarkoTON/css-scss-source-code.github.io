@@ -15,18 +15,24 @@
         -May want to add "border-box for "box-sizing so padding does not affect width
         -Reset margin and padding 
        */
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Raleway";
       }
 
       body {
         /* 
           -Background color is #344a72
         */
+        background-color: #344a72;
       }
 
       a {
         /* 
         Underlined links are ugly :)
        */
+       text-decoration: none;
       }
 
       #container {
@@ -35,12 +41,17 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
+        width: 80%;
+        margin: 30px auto;
       }
 
       .form-wrap {
         /* 
           This is the white area around the form and heading, etc
         */
+        background-color: #fff;
+        text-align: center;
+        padding: 20px 10px 10px 10px;
       }
 
       .form-wrap h1,
@@ -54,18 +65,26 @@
         /* 
           Each label, input is wrapped in .form-group
         */
+        /* display: ; */
+        text-align: left;
+        margin-top: 15px;
       }
 
       .form-wrap .form-group label {
         /* 
           Label should be turned into a block element
         */
+        display: block;
       }
 
       .form-wrap .form-group input {
         /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
         */
+        width: 100%;
+        border-radius: 3px;
+        padding: 10px;
+        border: lightgray solid 1px;
       }
 
       .form-wrap button {
