@@ -16,16 +16,19 @@
         --header-bg-color: #333;
         --header-txt-color: #fff;
         --header-txt-align: center; */
+        --box-bg-color: steelblue;
       }
-
+      
+      /* Now this variables are only available in this scope */
       header {
         --header-bg-color: #333;
         --header-txt-color: #fff;
         --header-txt-align: center;
       }
-
+      
       .box {
-        --box-bg-color: steelblue;
+        /* --box-bg-color it will overwrite :root one. By class rolls!  */
+        --box-bg-color: red;
         --box-txt-color: #fff;
         --box-1-width: 1;
         --box-2-width: 3;
