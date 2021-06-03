@@ -2,6 +2,7 @@ const items = document.querySelectorAll('#timeline li');
 
 const isInViewport = el => {
   const rect = el.getBoundingClientRect();
+  console.log(rect)
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -14,7 +15,11 @@ const isInViewport = el => {
 const run = () =>
   items.forEach(item => {
     if (isInViewport(item)) {
+      // item.classList.remove('hide');
       item.classList.add('show');
+    } else {
+      item.classList.remove('show');
+      // item.classList.add('hide');
     }
   });
 

@@ -121,6 +121,18 @@ h1 {
   background: var(--secondary-color);
 }
 
+/* Nisam bas dobio ono sto sam zeleo ali je opet zanimljivo. Moze da se koristi za scroll */
+/* Hide Boxes */
+/* #timeline ul li.hide div {
+  transform: none;
+  visibility: visible;
+  opacity: 0;
+} */
+
+#timeline ul li.hide:after {
+  background: var(--secondary-color);
+}
+
 
 @media(max-width: 900px) {
   #timeline ul li div {
